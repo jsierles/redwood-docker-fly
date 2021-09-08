@@ -24,9 +24,4 @@ const App = () => (
   </FatalErrorBoundary>
 )
 
-if (typeof window !== 'undefined') {
-  window.__REDWOOD__API_PROXY_PATH = process.env.API_PROXY_PATH
-    ? process.env.API_PROXY_PATH
-    : 'http://localhost:8911'
-}
 export default App

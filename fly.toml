@@ -6,14 +6,12 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[build.args]
-  API_PROXY_PATH = "https://redwood-docker.fly.dev/api/graphql"
+[deploy]
+  release_command = "yarn rw prisma migrate deploy"
+
 [[statics]]
   guest_path = "/app/public"
   url_prefix = "/"
-
-[env]
-  API_PROXY_PATH = "https://redwood-docker.fly.dev/api/graphql"
 
 [experimental]
   allowed_public_ports = []

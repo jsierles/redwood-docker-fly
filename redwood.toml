@@ -1,6 +1,6 @@
 [web]
   port = 8910
-  apiProxyPath = "/.netlify/functions"
+  apiProxyPath = "https://redwood-docker.fly.dev/api/graphql"
   title = "Redwood Tutorial Test"
 [api]
   port = 8911
