@@ -6,6 +6,8 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[build.args]
+  API_PROXY_PATH = "https://redwood-docker.fly.dev/api/graphql"
 [[statics]]
   guest_path = "/app/public"
   url_prefix = "/"
