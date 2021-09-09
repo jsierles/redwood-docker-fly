@@ -32,4 +32,4 @@ COPY --from=build /app/node_modules/.prisma /app/node_modules/.prisma
 EXPOSE 8911
 
 # Entrypoint to @redwoodjs/api-server binary
-ENTRYPOINT [ "yarn", "rw", "serve", "api", "--port", "8911", "--rootPath", "/api" ]
+CMD [ "yarn", "rw", "serve", "api", "--port", "8911", "--rootPath", "/api" ]
